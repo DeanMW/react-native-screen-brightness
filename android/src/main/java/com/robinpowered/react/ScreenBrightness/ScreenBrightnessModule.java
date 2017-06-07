@@ -98,7 +98,6 @@ implements ActivityEventListener {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (!Settings.System.canWrite(getCurrentActivity())) {
                 hasPermisson = false;
-                requestPermission();
             }
         }
         return hasPermisson;
